@@ -27,7 +27,7 @@ A CRM consists of CRM-nodes (or CRM-neurons), where each node is associated with
 Every neuron has an arithmetic part $\Sigma$ and a logical part $f_i(a)$. The arithmetic part acts as it would in any standard neural network, it is formed by $w_{ji}h_j(a_j) + w_{ki}h_k(a_k)$, the logical part is what is derived is a deterministic function of the data instance $x$. Hence, for a neuron($n_i$) with two ancestor neurons($n_j, n_k$) the final output would be
 
 $$
-h_i(a_i) = g_i(w_{ji}h_j(a_j) + w_{ki}h_k(a_k)) \times f_i(x)
+h_i(a_i) = g_i(w_{ji}h_j(a_j) + w_{ki}h_k(a_k)) \times f_i(a)
 $$
 
 Let us consider an example problem from the paper to illustrate the workings of a CRM.
